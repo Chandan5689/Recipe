@@ -11,23 +11,15 @@ import Lunch from "./pages/PopularCategories/Lunch/Lunch.jsx";
 import Dessert from "./pages/PopularCategories/Dessert/Dessert.jsx";
 import RecipeDetails from "./pages/RecipeDetails/RecipeDetails.jsx";
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      
       <Route path="" element={<Home />} />
-      <Route
-        path="/breakfast"
-        element={<BreakFast exploreCategoryTitle={"Breakfast"} />}
-      />
-      <Route
-        path="/dinner"
-        element={<Dinner exploreCategoryTitle={"Dinner"} />}
-      />
-      <Route path="/lunch" element={<Lunch exploreCategoryTitle={"Lunch"} />} />
+      <Route path="/breakfast" element={<BreakFast />} />
+      <Route path="/dinner" element={<Dinner />} />
+      <Route path="/lunch" element={<Lunch />} />
 
-      <Route path="/desserts" element={<Dessert exploreCategoryTitle={"Desserts"} />} />
+      <Route path="/desserts" element={<Dessert />} />
 
       <Route path="/recipes/:id" element={<RecipeDetails />} />
     </Route>
