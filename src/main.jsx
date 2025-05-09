@@ -5,7 +5,7 @@ import { createBrowserRouter, Route, RouterProvider } from "react-router";
 import { createRoutesFromElements } from "react-router";
 import Layout from "./Layout.jsx";
 import Home from "./components/Home/Home.jsx";
-import BreakFast from "./pages/PopularCategories/Breakfast/BreakFast.jsx";
+import BreakFast from "./pages/PopularCategories/Breakfast/Breakfast.jsx";
 import Dinner from "./pages/PopularCategories/Dinner/Dinner.jsx";
 import Lunch from "./pages/PopularCategories/Lunch/Lunch.jsx";
 import Dessert from "./pages/PopularCategories/Dessert/Dessert.jsx";
