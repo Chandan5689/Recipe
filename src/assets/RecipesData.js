@@ -358,7 +358,7 @@ const RecipesData = [
         },
       ],
       instructions:[
-        [
+        
           {
             "step": 1,
             "instruction": "Prepare the graham cracker crumbs. You can crush them in a zip-top bag with a rolling pin or in a food processor.",
@@ -414,7 +414,6 @@ const RecipesData = [
             "instruction": "Garnish with additional fresh berries or a sprinkle of graham cracker crumbs before serving, if desired.",
             "time": "1 min"
           }
-        ]
       ],
       nutritionFacts:{
         calories: 270,
