@@ -10,7 +10,7 @@ import {
     FaBookmark,
     FaShareNodes,
   } from "react-icons/fa6";
-import BackToHome from '../../../components/BackToHome';
+import BackToHome from '../../../components/ScrollControlling/BackToHome';
 function RecipeDetailsHero({recipe}) {
   return (
     <>

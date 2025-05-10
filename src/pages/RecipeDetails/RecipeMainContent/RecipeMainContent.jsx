@@ -7,7 +7,7 @@ import CookingTips from "./EachTabsDetail/CookingTips";
 import Instructions from "./EachTabsDetail/Instructions";
 import { Link } from "react-router";
 import { FaArrowLeft } from "react-icons/fa6";
-import BackToHome from "../../../components/BackToHome";
+import BackToHome from "../../../components/ScrollControlling/BackToHome";
 
 function RecipeMainContent({ recipe, servings, nutritionFacts }) {
   const [activeTab, setActiveTab] = useState("ingredients");

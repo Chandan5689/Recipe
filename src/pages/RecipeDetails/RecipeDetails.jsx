@@ -6,7 +6,7 @@ import RecipeOverview from "./RecipeOverview/RecipeOverview";
 import RecipeDetailsHero from "./RecipeDetailsHero/RecipeDetailsHero";
 import RecipesData from "../../assets/RecipesData";
 import RecipeMainContent from "./RecipeMainContent/RecipeMainContent";
-import BackToHome from "../../components/BackToHome";
+import BackToHome from "../../components/ScrollControlling/BackToHome";
 
 function RecipeDetails() {
   const recipes = RecipesData;

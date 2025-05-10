@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaClock, FaSignal } from "react-icons/fa6";
 import { useNavigate } from "react-router";
-import BackToHome from '../../components/BackToHome';
+import BackToHome from '../../components/ScrollControlling/BackToHome';
 function EachCategory({ exploreCategoryTitle,filteredCategory, }) {
     const navigate = useNavigate()
     const handleSelectedRecipe = (recipeId) => {
