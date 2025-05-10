@@ -11,7 +11,7 @@ function EachCategory({ exploreCategoryTitle,filteredCategory, }) {
     <>
     <section id="recipes" className="py-12 bg-gray-50">
         <div className="mx-auto px-4">
-          <div className="flex items-center md:pt-5 md:pl-2 mb-8 md:mt-10">
+          <div className="flex items-center md:pt-5 md:pl-2 mb-8 mt-10 lg:mt-8">
             <h2 className="text-2xl font-bold text-gray-800">
               {exploreCategoryTitle}
             </h2>
