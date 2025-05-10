@@ -8,17 +8,20 @@ import {
   FaPinterest,
   FaUtensils,
 } from "react-icons/fa6";
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate()
+  const location = useLocation()
   const scrollToSection = (sectionID) => {
     const section = document.getElementById(sectionID);
-    section?.scrollIntoView({behavior: "smooth"});
-
-    if(!section){
-      window.scrollTo({top:10,left:10,behavior:"smooth"})
+    if(section){
+      section.scrollIntoView({behavior: "smooth"});
+    }else{
+      if(location.pathname !== "/"){
+        navigate('/',{state:{scrollToId:sectionID}})
+      }
     }
-    
   };
 
   return (
@@ -80,12 +83,12 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <Link to='/'
+                <a
                   onClick={() => scrollToSection("categories")}
                   className="text-gray-400 hover:text-white cursor-pointer"
                 >
                   Categories
-                </Link>
+                </a>
               </li>
               <li>
                 <a
