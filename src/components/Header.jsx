@@ -1,13 +1,20 @@
 import React from "react";
-
 import { FaUtensils } from "react-icons/fa6";
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Header() {
-    const scrollToSection = (sectionID)=>{
-        const section = document.getElementById(sectionID);
-        section?.scrollIntoView({behavior:'smooth'})
-    }
+    const navigate = useNavigate()
+    const location = useLocation()
+    const scrollToSection = (sectionID) => {
+      const section = document.getElementById(sectionID);
+      if(section){
+        section.scrollIntoView({behavior: "smooth"});
+      }else{
+        if(location.pathname !== "/"){
+          navigate('/',{state:{scrollToId:sectionID}})
+        }
+      }
+    };
   return (
     <>
       <header className="bg-white shadow-sm z-50 relative">
