@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
-function Hero({bgImage}) {
-    // const [searchQuery,setSearchQuery] = useState("")
-    // const [showSuggestions,setShowSuggestions] = useState(false);
-    // const handleSearch = (e) =>{
-    //     e.preventDefault();
-    //     console.log("searching for",searchQuery)
-    // }
+function Hero({bgImage,title,subTitle}) {
+  
   return (
     <section id="home" className="relaive h-[500px] overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/90 to-transparent z-10 "></div>
@@ -17,8 +12,8 @@ function Hero({bgImage}) {
         />
         <div className="relative z-20 mx-auto px-4 h-full flex items-center">
             <div className="max-w-2xl text-white">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Discover Delicious Recipes for Every Occasion</h1>
-                <p className="text-lg mb-8">Explore our collection of easy-to-follow recipes that will inspire your cooking journey</p>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
+                <p className="text-lg mb-8">{subTitle}</p>
                 <div className="relative w-full max-w-xl">
                     <form>
                         <input type="text"
