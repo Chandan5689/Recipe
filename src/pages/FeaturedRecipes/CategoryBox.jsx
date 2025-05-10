@@ -18,7 +18,7 @@ function CategoryBox() {
   return (
     <section id='recipes' className='py-8 bg-white'>
         <div className='mx-auto px-4'>
-            <h2 className='font-bold text-2xl text-gray-800 my-6 md:mt-12'>Browse By Category</h2>
+            <h2 className='font-bold text-2xl text-gray-800 my-6 mt-10'>Browse By Category</h2>
             <div className='flex overflow-x-auto md:flex-wrap md:justify-center no-scrollbar gap-4 pb-2'>
                 {categories.map(category => (
                     <button key={category.id} className={`flex items-center px-5 py-3 rounded-md whitespace-nowrap transition-colors cursor-pointer ${activeCategory === category.name ?'bg-emerald-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`} onClick={()=>handleCategoryClick(category.name)}>
